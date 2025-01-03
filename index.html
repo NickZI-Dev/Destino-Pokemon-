@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destino Pokémon!</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./img/icon-arceus.png" type="image/x-icon">
+</head>
+
+<body>
+  <main>
+      <div class="container">
+        <select class="regiao" id="regiao">
+          <option value="Kanto">Kanto</option>
+          <option value="Johto">Johto</option>
+          <option value="Hoenn">Hoenn</option>
+          <option value="Sinnoh">Sinnoh</option>
+          <option value="Unova">Unova</option>
+        </select>
+        <div id="pokemon-1">
+            <img src="./img/bulbasaur.png" alt="bulbasaur-image">
+            <h1>Bulbasaur</h1>
+            <h2>Grama</h2>
+            <h3>#001</h3>
+        </div>
+        <div id="pokemon-2">
+          <img src="./img/charmander.png" alt="charmander-image">
+          <h1>Charmander</h1>
+          <h2>Chamas</h2>
+          <h3>#004</h3>
+        </div>
+        <div id="pokemon-3">
+          <img src="./img/Squirtle.png" alt="squirtle-image">
+          <h1>Squirtle</h1>
+          <h2>Água</h2>
+          <h3>#007</h3>
+        </div>
+        <button type="submit" id="button" class="click-button">Prosseguir &rarr;</button>
+      </div>
+      <form id="form">
+        <label for="nome-treinador">Adicionar treinadores:</label>
+        <input type="text" id="nome-treinador" required placeholder="Adicionar nome">
+        <button type="submit" class="plus-btn">+</button>
+      </form>
+    <table class="tabelaTreinadores" cellspacing="0">
+      <thead>
+        <tr>
+          <th>
+            Número de treinadores:
+          </th>
+          <th>Nome:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#</td>
+          <td>---</td>
+        </tr>
+      </tbody>
+    </table>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
